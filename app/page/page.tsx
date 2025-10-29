@@ -6,7 +6,7 @@ import { SiGooglemaps } from "react-icons/si";
 import * as styled from '../styledSite/StylePage'
 import { Toaster } from '../../components/ui/sonner'
 import { toast } from "sonner";
-export const PageAll = () => {
+const PageAll = () => {
     const valores = [{ icon: <FaPhoneAlt />, nome: 'Telefone', funcao: Telefone }, { icon: <FaWhatsapp />, nome: 'Whatsapp', funcao: Whatsapp }, { icon: <SiGooglemaps />, nome: 'Localização', funcao: Localizacao }, { icon: <FaPix />, nome: 'Chave PIX CNPJ', funcao: pix }]
     function Telefone() {
         window.location.href = 'tel:556193052684';
@@ -44,3 +44,4 @@ export const PageAll = () => {
         </>
     )
 }
+export default PageAll;
